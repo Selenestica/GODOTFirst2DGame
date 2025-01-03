@@ -13,11 +13,14 @@ func _process(delta: float) -> void:
 	pass
 
 func game_over():
+	$HUD.show_game_over()
 	$ScoreTimer.stop()
 	$MobTimer.stop()
 
 func new_game():
 	score = 0
+	$HUD.update_score(score)
+	$HUD.show_message("Get Ready")
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
 
@@ -48,6 +51,7 @@ func _on_mob_timer_timeout() -> void:
 
 
 func _on_score_timer_timeout() -> void:
+	$HUD.update_score(score)
 	score += 1
 
 
