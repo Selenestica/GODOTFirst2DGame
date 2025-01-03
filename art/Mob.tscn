@@ -55,10 +55,10 @@ script = ExtResource("1_p4s2h")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0.0625019, 0)
-scale = Vector2(0.751147, 0.75)
+scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_lt184")
 animation = &"fly"
+frame_progress = 0.784572
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708

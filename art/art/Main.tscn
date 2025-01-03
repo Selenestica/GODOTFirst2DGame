@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=4 uid="uid://vf2d63uf88oy"]
+[gd_scene load_steps=10 format=4 uid="uid://vf2d63uf88oy"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_twgk8"]
 [ext_resource type="PackedScene" uid="uid://vfklnuwxvgyo" path="res://Mob.tscn" id="2_n5wrk"]
+[ext_resource type="Texture2D" uid="uid://cqotsminb7fro" path="res://art/Profile02.jpg" id="3_0uam6"]
 [ext_resource type="PackedScene" uid="uid://cwqmcwgcsovkl" path="res://Player.tscn" id="3_rt8p1"]
 [ext_resource type="PackedScene" uid="uid://bnhu7jfitcfww" path="res://Hud.tscn" id="4_gdntd"]
 [ext_resource type="AudioStream" uid="uid://c0khdgiu75fw4" path="res://art/gameover.wav" id="6_kwucn"]
@@ -25,13 +26,13 @@ loop = true
 script = ExtResource("1_twgk8")
 mob_scene = ExtResource("2_n5wrk")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.252842, 0.502641, 0.521555, 1)
+texture = ExtResource("3_0uam6")
 
 [node name="Player" parent="." instance=ExtResource("3_rt8p1")]
 
